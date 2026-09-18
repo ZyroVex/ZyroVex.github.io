@@ -1,1 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOWNLOAD - ZyroVex</title>
+        <style>
+            body {
+                background-color: #000000;
+                color: #FFFFFF;
+                font-family: Arial, sans-serif;
+                text-align: center;
+                padding: 50px;
+            }
+            .card {
+                background-color: #1a1a1a;
+                border-radius: 10px;
+                padding: 20px;
+                margin: 20px auto;
+                width: 300px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+            .download-button {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                text-decoration: none;
+                border-radius: 5px;
+                display: inline-block;
+                margin-top: 10px;
+            }
+            .discord-button {
+                background-color: #7289DA;
+                color: white;
+                padding: 10px 20px;
+                text-decoration: none;
+                border-radius: 5px;
+                display: inline-block;
+                margin-top: 10px;
+                /* Add non hover effect for the Discord button */
+                animation: shrinkdown 0.3s ease-in-out;
+            }
+            .discord-button:hover {
+                background-color: #5b6eae;
+                /* Add a hover effect for the Discord button */
+                animation: shrinkup 0.3s ease-in-out;
+            }
+            .underline {
+                text-decoration: underline;
+            }
+            .underline:hover {
+              text-decoration: bold underline;
+            }
+            @keyframes shrinkup {
+                0% { transform: scale(1); }
+               100% { transform: scale(1.35);}
+            }
+            @keyframes shrinkdown {
+                0% { transform: scale(1.35); }
+               100% { transform: scale(1);}
+            }
+        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Download Page for ZyroVex. Get the latest version of our software">
+        <meta name="Creator" content="ZyroVex">
+        </head>
+        <body>
+            <header>
+                <h1>Download - ZyroVex</h1>
+                <button class="discord-button" onclick="window.location.href='https://discord.gg/5rMjbaBw74'">Join our discord</button>
+            </header>
+            <main>
+                <div class="card">
+                    <h2>Latest Version</h2>
+                    <p>Version 1.0.0</p>
+                    <button class="download-button">Download</button>
+                </div>
+                <div class="card">
+                    <h1>What is ZyroVex?</h1>
+                    <p>ZyroVex is a customed Roblox for gamers who want the best experience.</p>
+                    <p>We will add new features and improvements in future updates.</p>
+                </div>
+                <div class="card">
+                    <h1>Support ZyroVex</h1>
+                    <p>If you like ZyroVex and want to support us by joining our Discord community.</p>
+
+                    <a class="discord-button" href="https://discord.gg/5rMjbaBw74">Join our Discord</a>
+
+                </div>
+                <div class="card">
+                    <h1>Credits</h1>
+                    <p>ShadowDev - Creator</p>
+
+                    <!-- hint -->
+                     <p class="hinttext">Thanks to ShadowDev making his whole Project</p>
+                </div>
+            </main>
+            <script>
+                const downloadButton = document.querySelector('.download-button');
+                downloadButton.addEventListener('click', () => {
+                    alert('Thank you for downloading ZyroVex! Your download will start shortly.');
+                    // makes a new page for download for ZyroVex
+                  //  window.open("download.html", "_blank");
+                });
+            </script>
+        </body>
+</html>
 
